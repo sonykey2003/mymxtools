@@ -19,31 +19,24 @@ pip install -r requirements.txt
 ```
 4. Now run the script by providing the domain as the param:
 ```sh
-python myMXTool.py jumpcloud.com  
+python myMXTool.py microsoft.com  
 ```
 5. The output should look like this:
 ```sh
-Email service is:['Google']
+Email service is:['M365']
 
-Here is a list of SaaS jumpcloud.com is using:
+Here is a list of SaaS microsoft.com is using:
 
-google
-zoho.com
-et.pardot.com
-keybase
+msft.net
 atlassian
-miro
-status
-docker
-parallels
-mktomail.com
-apple
-salesforce.com
-logmein
-stspg-customer.com
-mongodb
-teamviewer
-dropbox
+microsoft.com
+google
+hotmail.com
+hubspot
+facebook
+
+
+
 
 
 ```

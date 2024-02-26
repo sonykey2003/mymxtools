@@ -38,7 +38,7 @@ def serviceExtractor(domain):
           #print(service_name)
       elif "spf" in record:
          spf_records = re.findall(r'include:([^\s]+)', record)
-         spf_records = [re.sub(r'(_?spf\.)', '', domain) for domain in spf_records] # Pop off the spf prefixes
+         spf_records = [re.sub(r'_?spf[-\w]*\.', '', domain) for domain in spf_records] # Pop off the spf prefixes
          for subsvc in spf_records:
              if "outlook.com" in subsvc or "google.com" in subsvc:
                 pass
