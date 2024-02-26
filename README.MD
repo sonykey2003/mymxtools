@@ -1,6 +1,4 @@
 # myDNSTool
-
-## Description
 myDNSTool is a Python utility designed to perform a quick lookup on a domain nam, finding what email service this domain is using, plus the SaaS services (if any).
 It leverages the dnspython library to query the TXT (SPF) & MX records from the provided domain, all public info. 
 
@@ -16,15 +14,15 @@ To install myMXTool, follow these steps:
 1. Clone this repository or download the source code. 
 2. Navigate to the directory containing `myDNSTool.py`. Recommended - create a [virtual env](https://docs.python.org/3/library/venv.html) before proceeding. 
 3. Install the required dependencies:
-```shell
+```sh
 pip install -r requirements.txt
 ```
 4. Now run the script by providing the domain as the param:
-```shell
+```sh
 python myMXTool.py jumpcloud.com  
 ```
 5. The output should look like this:
-```shell
+```sh
 Email service is:['Google']
 
 Here is a list of SaaS jumpcloud.com is using:
