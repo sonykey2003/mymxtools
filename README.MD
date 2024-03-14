@@ -17,10 +17,13 @@ To install myMXTool, follow these steps:
 ```py
 apikey = "your-api-key"
 ```
-    * If you are storing the API key in 1password and installed 1password CLI, you can enjoy the convience using touchID for withdrawing the key without exposing in the script:
-    ```py
-    apikey = get1Pkey("op://<your-secret-path>")
-    ```
+
+
+* If you are storing the API key in 1password and installed 1password CLI, you can enjoy the convience using touchID for withdrawing the key without exposing in the script:
+```py
+ apikey = get1Pkey("op://<your-secret-path>")
+```
+
 4. Now run the script by providing the domain as the param:
 ```sh
 python myCorpInsightTool.py microsoft.com  
