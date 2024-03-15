@@ -13,7 +13,7 @@ Ensure you have [Python](https://www.python.org/downloads/) installed on your sy
 To install myMXTool, follow these steps:
 1. Clone this repository or download the source code. 
 2. Navigate to the directory containing `myCorpInsightTool.py`. Recommended - create a [virtual env](https://docs.python.org/3/library/venv.html) before proceeding. 
-3. Input the [Apollo.io](https://www.apollo.io/product/api) API key at line 13:
+3. Input the [Apollo.io](https://www.apollo.io/product/api) API key at line 23:
 ```py
 apikey = "your-api-key"
 ```
@@ -70,3 +70,8 @@ Tealium
 Vidyard
 WordPress.org
 reCAPTCHA
+```
+
+6.(Updated 15th Mar 2024) Added a new `--all` Parameter:
+
+When included (`--all`), the script displays the full dataset retrieved from the API, including all details of the organization's technologies, employee count, and more, formatted in JSON for comprehensive review. Without this parameter, the script presents a curated summary, focusing on specific details like email service providers and the total estimated number of employees.
