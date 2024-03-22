@@ -72,6 +72,36 @@ WordPress.org
 reCAPTCHA
 ```
 
-6.(Updated 15th Mar 2024) Added a new `--all` Parameter:
+6. (Updated 15th Mar 2024) Added a new `--all` Parameter:
 
 When included (`--all`), the script displays the full dataset retrieved from the API, including all details of the organization's technologies, employee count, and more, formatted in JSON for comprehensive review. Without this parameter, the script presents a curated summary, focusing on specific details like email service providers and the total estimated number of employees.
+
+7. (Updated 22th Mar 2034) Added a new `--depthc` Parameter:
+When included (`--depthc`), the script will display a breakdown of HC for each department:
+```json
+
+Here is the HC breakdown per department:
+
+{
+  "education": 14578,
+  "business_development": 7093,
+  "sales": 8923,
+  "engineering": 53603,
+  "consulting": 3689,
+  "support": 9703,
+  "operations": 3152,
+  "marketing": 4486,
+  "product_management": 6801,
+  "human_resources": 3294,
+  "administrative": 496,
+  "media_and_commmunication": 1451,
+  "finance": 2853,
+  "data_science": 1929,
+  "information_technology": 3071,
+  "arts_and_design": 1676,
+  "legal": 677,
+  "accounting": 269,
+  "entrepreneurship": 92
+}
+
+```
