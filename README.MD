@@ -30,53 +30,20 @@ python myCorpInsightTool.py microsoft.com
 ```
 5. The output should look like this:
 ```sh
-Email service is:  Outlook
+Email service is:  ['Outlook']
 
-Total Estimated Employees:  238000
+Total Estimated Employees:  229000
 
-Here is a list of SaaS microsoft.com is using:
+Here is a top list of SaaS microsoft.com is using:
 
-ASP.NET
-Adobe Media Optimizer
-Akamai
-Akamai RUM
-Bing Ads
-Bootstrap Framework
-ClickTale
-DoubleClick
-DoubleClick Conversion
-F5 BIG-IP
-Facebook Custom Audiences
-Facebook Login (Connect)
-Facebook Widget
-FullStory
-Google Analytics Ecommerce Tracking
-Google Dynamic Remarketing
-Google Tag Manager
-Kentico
-Linkedin Marketing Solutions
-LivePerson Monitor
-Marketo
-Microsoft Azure Hosting
-Microsoft-IIS
-Mobile Friendly
-Nginx
-Omniture (Adobe)
-Outlook
-Qualtrics
-Scene7
-SiteCore
-Tealium
-Vidyard
-WordPress.org
-reCAPTCHA
+Hosting: Microsoft Azure Hosting
+CMS: WordPress.org
+
 ```
+**Updated 19th Aug 2034** - Reformatted output for `--all` and added a `--raw` parameter to display the JSON data. 
 
-6. (Updated 15th Mar 2024) Added a new `--all` Parameter:
 
-When included (`--all`), the script displays the full dataset retrieved from the API, including all details of the organization's technologies, employee count, and more, formatted in JSON for comprehensive review. Without this parameter, the script presents a curated summary, focusing on specific details like email service providers and the total estimated number of employees.
-
-7. (Updated 22th Mar 2034) Added a new `--depthc` Parameter:
+**Updated 22th Mar 2034** - Added a new `--depthc` Parameter:
 When included (`--depthc`), the script will display a breakdown of HC for each department:
 ```json
 
@@ -105,3 +72,6 @@ Here is the HC breakdown per department:
 }
 
 ```
+**Updated 15th Mar 2024** - Added a new `--all` Parameter:
+
+When included (`--all`), the script displays the full dataset retrieved from the API, including all details of the organization's technologies, employee count, and more, formatted in JSON for comprehensive review. Without this parameter, the script presents a curated summary, focusing on specific details like email service providers and the total estimated number of employees.
