@@ -58,10 +58,12 @@ def main():
     print(f"Total Estimated Employees:  {services['organization']['estimated_num_employees']}\n")
     
     if args.all:
+        corp_desprition = services['organization']['short_description']
         # Print out the categories with services
         print(f"Here is a list of SaaS {args.domain} is using:\n")
         for category, services in categories.items():
             print(f"{bold_start}{color_start}{category}:{bold_end}{color_end} {', '.join(services)}")
+        print(f"{bold_start}{color_start}Corp Description:{bold_end}{color_end}:{corp_desprition}")
 
     elif args.depthc:
         print(f"Here is a list of SaaS {args.domain} is using:\n")
